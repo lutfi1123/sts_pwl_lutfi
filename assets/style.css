@@ -1,0 +1,129 @@
+body {
+    font-family: Arial, sans-serif;
+    --blood-red: #c91d34;
+    --blood-red-dark: #180609;
+    --blood-red-light: #f8e8eb;
+    --blood-red-hover: #a71328;
+}
+
+.navbar.bg-dark {
+    background-color: var(--blood-red-dark) !important;
+    border-bottom: 1px solid rgba(201, 29, 52, 0.45);
+}
+
+.hero,
+.page-header {
+    background:
+        radial-gradient(ellipse at 78% 48%, rgba(201, 29, 52, 0.24), transparent 43%),
+        linear-gradient(135deg, #100507, #21060b 55%, #100507);
+    color: #ffffff;
+}
+
+.hero {
+    position: relative;
+    overflow: hidden;
+    min-height: 75vh;
+    display: flex;
+    align-items: center;
+    padding: 80px 0;
+}
+
+.hero .container {
+    z-index: 1;
+}
+
+.hero .lead {
+    color: rgba(255, 255, 255, 0.88);
+}
+
+.hero .btn-outline-dark {
+    color: #ffffff;
+    border-color: rgba(255, 255, 255, 0.8);
+}
+
+.hero .btn-outline-dark:hover {
+    color: var(--blood-red-dark);
+    background-color: #ffffff;
+}
+
+.hero-image {
+    position: absolute;
+    top: 0;
+    right: 0;
+    width: 50%;
+    max-width: none;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+    -webkit-mask-image: linear-gradient(to right, transparent, #000 22%);
+    mask-image: linear-gradient(to right, transparent, #000 22%);
+}
+
+@media (max-width: 991.98px) {
+    .hero-image {
+        position: static;
+        width: 100%;
+        max-width: 420px;
+        height: auto;
+        object-fit: contain;
+        -webkit-mask-image: none;
+        mask-image: none;
+    }
+}
+
+.page-header {
+    padding: 80px 0;
+}
+
+.card {
+    border-radius: 14px;
+
+}
+
+.service-card {
+    overflow: hidden;
+    transition: 0.3s;
+}
+
+.service-card:hover {
+    transform: translateY(-5px);
+}
+
+.service-card img {
+    height: 210px;
+    object-fit: cover;
+}
+
+.contact-image {
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
+}
+
+.btn {
+    border-radius: 8px;
+}
+
+.btn-primary,
+.bg-primary {
+    background-color: var(--blood-red) !important;
+    border-color: var(--blood-red) !important;
+}
+
+.btn-primary:hover,
+.btn-primary:focus-visible {
+    background-color: var(--blood-red-hover) !important;
+    border-color: var(--blood-red-hover) !important;
+}
+
+.service-card {
+    border-top: 3px solid var(--blood-red) !important;
+}
+
+footer.bg-dark {
+    background-color: var(--blood-red-dark) !important;
+}
+
+footer {
+    margin-top: 30px;
+}
